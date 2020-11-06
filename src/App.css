@@ -44,4 +44,5 @@
 
 .card {
   border: 1px solid transparent;
+  position: relative;
 }
