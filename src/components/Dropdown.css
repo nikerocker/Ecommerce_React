@@ -1,13 +1,23 @@
-.dropdown button {
-  border: 2px solid #000;
+.dropdown .selector {
+  border: 2px solid #9b9999;
   border-radius: 50px;
-  padding: 10px 19px;
-  margin-right: 7px;
+  padding: 5px 14px 3px;
+  border: 1px solid #000;
+  align-self: center;
+}
+.dropdown .selector label,
+.dropdown .selector select {
+  border: none;
   cursor: pointer;
-  display: inline-block;
-  min-width: 33px;
-  min-height: 33px;
-  text-align: center;
   font-size: 12px;
   font-weight: 700;
+  background-color: #fff;
+}
+
+.dropdown .selector select:focus,
+.dropdown .selector select:active,
+.dropdown .selector select option:focus,
+.dropdown .selector select option:active {
+  border: none;
+  outline: none;
 }
