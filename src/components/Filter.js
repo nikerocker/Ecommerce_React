@@ -28,7 +28,7 @@ export default function Filter(props) {
             })}
           </div>
         </div>
-        <Dropdown />
+        <Dropdown sortHTL={props.sortHTL} />
       </div>
       <hr className="filter-hr" />
     </>

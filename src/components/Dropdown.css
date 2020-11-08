@@ -11,7 +11,7 @@
 }
 .dropdown .selector label,
 .dropdown .selector select {
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   font-size: 12px;
   font-weight: 700;
@@ -22,6 +22,6 @@
 .dropdown .selector select:active,
 .dropdown .selector select option:focus,
 .dropdown .selector select option:active {
-  border: none;
+  border: 1px solid transparent;
   outline: none;
 }

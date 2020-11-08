@@ -16,6 +16,7 @@ export default function ProductSection(props) {
           <Filter
             handleBtnClick={props.handleBtnClick}
             btnsData={props.btnsData}
+            sortHTL={props.sortHTL}
           />
           <Product
             productsData={props.productsData}

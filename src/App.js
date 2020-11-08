@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import ProductSection from "./components/ProductSection";
 import Offer from "./components/Offer";
@@ -12,8 +12,10 @@ export default class App extends Component {
       productsData: [],
       filteredData: [],
       cartCount: 0,
+      selectValue: "htl",
     };
     this.handleCartProducts = this.handleCartProducts.bind(this);
+    this.sortHTL = this.sortHTL.bind(this);
   }
 
   componentDidMount() {
@@ -53,6 +55,21 @@ export default class App extends Component {
     });
   };
 
+  sortHTL(e) {
+    console.log(this.apiProducts);
+    let filteredData;
+    console.log(e.target.value);
+    if (e.target.value == "lth") {
+      filteredData = this.apiProducts.sort((a, b) =>
+        a.price > b.price ? 1 : -1
+      );
+    } else {
+      filteredData = this.apiProducts.sort((a, b) =>
+        a.price > b.price ? -1 : 1
+      );
+    }
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -63,6 +80,7 @@ export default class App extends Component {
             productsData={this.state.productsData}
             handleBtnClick={this.handleBtnClick}
             handleCartProducts={this.handleCartProducts}
+            sortHTL={this.sortHTL}
           />
         </React.Fragment>
       </BrowserRouter>

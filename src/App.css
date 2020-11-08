@@ -36,6 +36,7 @@
 }
 .products-in-row {
   padding: 0 10px;
+  flex: 1 1 100%;
 }
 .products-in-row img {
   height: auto;
@@ -65,4 +66,22 @@
     margin-bottom: 5px;
     padding: 5px 10px;
   }
+}
+
+.navbar-nav .dropdown {
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.nav-link.search ~ svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.user-interaction {
+  align-items: flex-start;
+}
+
+.add-to-cart {
+  width: 100%;
+  text-align: center;
 }
