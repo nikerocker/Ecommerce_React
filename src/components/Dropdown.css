@@ -1,3 +1,7 @@
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+}
 .dropdown .selector {
   border: 2px solid #9b9999;
   border-radius: 50px;

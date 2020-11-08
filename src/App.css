@@ -46,3 +46,23 @@
   border: 1px solid transparent;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .custom-container {
+    padding: 12px !important;
+    flex-wrap: wrap !important;
+  }
+  .custom-container button {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .product-container .filter-options {
+    max-width: 43%;
+  }
+  .product-container .dropdown {
+    max-width: 56%;
+  }
+  .filter-options .buttons-container button {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+  }
+}
