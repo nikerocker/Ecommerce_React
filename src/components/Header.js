@@ -32,7 +32,7 @@ export default function Header(props) {
             <li className="nav-item dropdown active">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="/"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-toggle="dropdown"
@@ -45,29 +45,29 @@ export default function Header(props) {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <Link className="dropdown-item" href="#">
+                <Link className="dropdown-item" to="/Men">
                   Men
                 </Link>
-                <Link className="dropdown-item" href="#">
+                <Link className="dropdown-item" to="/Women">
                   Women
                 </Link>
-                <Link className="dropdown-item" href="#">
+                <Link className="dropdown-item" to="/Kids">
                   Kids
                 </Link>
               </div>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
-                About Us<span className="sr-only">(current)</span>
+              <Link className="nav-link" to="/About Us">
+                About Us
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" to="/Our Store">
                 Our Store
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" to="/Contact Us">
                 Contact Us
               </Link>
             </li>
@@ -77,7 +77,7 @@ export default function Header(props) {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav user-interaction">
             <li className="nav-item">
-              <Link className="nav-link search" href="#">
+              <Link className="nav-link search" to="/Search">
                 Search
               </Link>
               <svg
@@ -99,12 +99,12 @@ export default function Header(props) {
               </svg>
             </li>
             <li className="nav-item user">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" to="/user-info">
                 <img src="images/svg/user-icon.svg" alt="user-icon" />
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link position-relative" href="#">
+              <Link className="nav-link position-relative" to="/cart-page">
                 <img src="images/svg/cart-icon.svg" alt="cart" />
                 <span className="circle">{props.cartCount}</span>
               </Link>

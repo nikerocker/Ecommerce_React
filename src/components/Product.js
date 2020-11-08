@@ -11,11 +11,10 @@ export default function Product(props) {
          row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
     >
       {productsData.map((value, i) => {
-        // console.log(value.options[0]);
         var percentOff = parseInt(
           ([value.compare_at_price - value.price] / value.compare_at_price) *
             100
-        ); //8-4=4
+        );
         return (
           <div className="col mt-4 mb-2 products-in-row" key={i}>
             <div className="card">

@@ -6,16 +6,16 @@ export default function Breadcrum() {
       <nav className="breadcrum">
         <ol>
           <li className="breadcrumb-item">
-            <Link to="/">Home</Link>
+            <Link to="/Home">Home</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/">Clothing</Link>
+            <Link to="/Clothing">Clothing</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/">Mens Clothing</Link>
+            <Link to="/Mens Clothing">Mens Clothing</Link>
           </li>
           <li className="breadcrumb-item ">
-            <Link className="active" to="/">
+            <Link className="active" to="/All Mens Clothing">
               All Mens Clothing
             </Link>
           </li>

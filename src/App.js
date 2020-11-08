@@ -3,8 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import ProductSection from "./components/ProductSection";
 import Offer from "./components/Offer";
-
 import Header from "./components/Header";
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -57,17 +57,17 @@ export default class App extends Component {
 
   sortHTL(e) {
     console.log(this.apiProducts);
-    let filteredData;
-    console.log(e.target.value);
-    if (e.target.value == "lth") {
-      filteredData = this.apiProducts.sort((a, b) =>
-        a.price > b.price ? 1 : -1
-      );
-    } else {
-      filteredData = this.apiProducts.sort((a, b) =>
-        a.price > b.price ? -1 : 1
-      );
-    }
+    // let filteredData;
+    // console.log(e.target.value);
+    // if (e.target.value == "lth") {
+    //   filteredData = this.apiProducts.sort((a, b) =>
+    //     a.price > b.price ? 1 : -1
+    //   );
+    // } else {
+    //   filteredData = this.apiProducts.sort((a, b) =>
+    //     a.price > b.price ? -1 : 1
+    //   );
+    // }
   }
 
   render() {
