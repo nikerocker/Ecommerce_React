@@ -1,0 +1,34 @@
+.filter-options {
+  margin: 1.5rem 0;
+}
+
+.filter-options h3,
+.filter-options ul {
+  display: inline-block;
+}
+.filter-options .buttons-container {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.filter-options .buttons-container button {
+  border: 2px solid #9b9999;
+  border-radius: 50px;
+  padding: 10px 19px;
+  margin-right: 7px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #fff;
+}
+.filter-options .buttons-container button.active {
+  border: 2px solid #000000;
+}
+
+.filter-options .buttons-container button:focus {
+  outline: none;
+}
+
+.filter-hr {
+  margin: 0;
+}

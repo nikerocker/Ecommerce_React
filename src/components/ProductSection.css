@@ -1,0 +1,28 @@
+.breadcrum {
+  font-weight: 400;
+  font-size: 13px;
+  margin: 1.2em 0;
+}
+.breadcrum ol {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.breadcrum ol li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.breadcrum ol li a.active {
+  font-weight: 600;
+}
+
+.heading span {
+  font-size: 21px;
+  font-weight: 700;
+}
+.heading .some-blur {
+  font-weight: 300;
+  margin-left: 10px;
+}

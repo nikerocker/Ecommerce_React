@@ -1,0 +1,44 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 999999;
+  width: 100%;
+}
+
+.collapse {
+  justify-content: flex-end;
+  font-size: 14px;
+}
+.nav-link {
+  color: #000 !important;
+  font-size: 14px;
+}
+
+.nav-link.search {
+  display: inline-block;
+}
+.nav-link.search ~ svg {
+  width: 28px;
+  height: 28px;
+}
+
+.user-interaction {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  padding: 2px 7px;
+  border-radius: 50px;
+  background: #e64c09;
+  font-size: 11px;
+  color: #fff;
+  top: 4px;
+  right: -7px;
+  position: absolute;
+}
+
+.user {
+  margin-left: 6px;
+}
