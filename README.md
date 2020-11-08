@@ -1,3 +1,6 @@
+#Demo 
+<img src="https://github.com/nikerocker/Ecommerce_React/blob/master/gif/React-Ecommerce.gif" alt="demo of react ecommerce"/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
