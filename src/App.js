@@ -58,18 +58,18 @@ export default class App extends Component {
   sortHTL(e) {
     let filteredData;
     console.log(e.target.value);
-    if (e.target.value == "lth") {
+    if (e.target.value === "htl") {
       filteredData = this.apiProducts.sort((a, b) =>
-        a.price > b.price ? 1 : -1
+        Number(a.price) > Number(b.price) ? 1 : -1
       );
-
-      console.log(filteredData);
+    } else if (e.target.value === "lth") {
+      filteredData = this.apiProducts.sort((a, b) =>
+        Number(a.price) > Number(b.price) ? -1 : 1
+      );
     } else {
-      filteredData = this.apiProducts.sort((a, b) =>
-        a.price > b.price ? -1 : 1
-      );
+      filteredData = this.apiProducts;
     }
-    console.log(filteredData);
+
     this.setState({
       productsData: filteredData,
     });
