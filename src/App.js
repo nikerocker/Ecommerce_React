@@ -22,12 +22,6 @@ export default class App extends Component {
     this.getProductData();
   }
 
-  handleCartProducts() {
-    this.setState({
-      cartCount: this.state.cartCount + 1,
-    });
-  }
-
   getProductData() {
     fetch("./products.json")
       .then((res) => res.json())
@@ -36,6 +30,12 @@ export default class App extends Component {
         this.setState({ productsData: data });
       })
       .catch((err) => console.error(err));
+  }
+
+  handleCartProducts() {
+    this.setState({
+      cartCount: this.state.cartCount + 1,
+    });
   }
 
   handleBtnClick = (e) => {

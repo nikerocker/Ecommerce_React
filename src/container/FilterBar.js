@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./FilterBar.css";
 import Dropdown from "../components/Dropdown";
 import Filter from "../components/Filter";
