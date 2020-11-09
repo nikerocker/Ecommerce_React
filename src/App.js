@@ -10,9 +10,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       productsData: [],
-      filteredData: [],
       cartCount: 0,
-      selectValue: "htl",
     };
     this.handleCartProducts = this.handleCartProducts.bind(this);
     this.sortHTL = this.sortHTL.bind(this);
@@ -59,15 +57,15 @@ export default class App extends Component {
     let filteredData;
     console.log(e.target.value);
     if (e.target.value === "htl") {
-      filteredData = this.apiProducts.sort((a, b) =>
+      filteredData = this.state.productsData.sort((a, b) =>
         Number(a.price) > Number(b.price) ? 1 : -1
       );
     } else if (e.target.value === "lth") {
-      filteredData = this.apiProducts.sort((a, b) =>
+      filteredData = this.state.productsData.sort((a, b) =>
         Number(a.price) > Number(b.price) ? -1 : 1
       );
     } else {
-      filteredData = this.apiProducts;
+      filteredData = this.state.productsData;
     }
 
     this.setState({
