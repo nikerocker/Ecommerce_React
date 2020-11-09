@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import ProductSection from "./components/ProductSection";
+import ProductSection from "./container/ProductSection";
 import Offer from "./components/Offer";
 import Header from "./components/Header";
 
