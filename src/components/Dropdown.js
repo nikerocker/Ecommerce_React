@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Dropdown.css";
 export default function Dropdown(props) {
   return (
     <div className="dropdown col-9 col-md-3 text-right">

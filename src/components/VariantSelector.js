@@ -1,5 +1,4 @@
 import React from "react";
-import "./VariantSelector.css";
 export default function VariantSelector(props) {
   var variant = props.variant;
   // console.log(variant)

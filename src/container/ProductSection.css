@@ -1,3 +1,4 @@
+/* BreadCrum Component CSS */
 .breadcrum {
   font-weight: 400;
   font-size: 13px;
@@ -25,4 +26,138 @@
 .heading .some-blur {
   font-weight: 300;
   margin-left: 10px;
+}
+
+/* 
+Header Component CSS */
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 999999;
+  width: 100%;
+}
+
+.collapse {
+  justify-content: flex-end;
+  font-size: 14px;
+}
+.nav-link {
+  color: #000 !important;
+  font-size: 14px;
+}
+
+.nav-link.search {
+  display: inline-block;
+}
+.nav-link.search ~ svg {
+  width: 28px;
+  height: 28px;
+}
+
+.user-interaction {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  padding: 2px 7px;
+  border-radius: 50px;
+  background: #e64c09;
+  font-size: 11px;
+  color: #fff;
+  top: 4px;
+  right: -7px;
+  position: absolute;
+}
+
+.user {
+  margin-left: 6px;
+}
+
+/* OFFER Component CSS */
+.custom-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #191716, #ec4e08);
+  color: #fff;
+  padding: 12px 0;
+}
+.btn {
+  border-color: transparent;
+  background-color: #fff;
+  border-radius: 50px;
+  margin-left: 35px;
+  font-size: 14px;
+  font-weight: 400px;
+  padding: 3px 11px;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Varient Selector CSS */
+.card .variant-selector {
+  display: none;
+  padding: 0 15px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  background: #fff;
+  padding-top: 20px;
+}
+
+.card .variant-selector h5 {
+  font-size: 0.8rem;
+}
+
+.card .variant-selector .size-in-number {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.card .variant-selector .size-in-number span {
+  border: 2px solid #9b9999;
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 7px;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 33px;
+  min-height: 33px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.card .variant-selector .size-in-number span:hover {
+  border: 2px solid #000;
+}
+.card:hover .variant-selector {
+  display: block;
+}
+
+.add-to-cart {
+  display: none;
+  position: absolute;
+  padding: 15px;
+  background: #fff;
+  bottom: 28px;
+  left: 5px;
+}
+
+.add-to-cart button {
+  padding: 7px 65px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #fff;
+  border: 2px solid #c0c0c0;
+}
+.add-to-cart button:active {
+  background-color: #f0c14b;
+  border: 2px solid #fff;
 }
